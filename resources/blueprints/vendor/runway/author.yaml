@@ -1,0 +1,19 @@
+tabs:
+  main:
+    fields:
+      -
+        handle: id
+        field:
+          type: text
+          display: 'ID'
+          validate: required
+          listable: true
+      -
+        handle: name
+        field:
+          type: text
+          display: Name
+          validate: required
+          listable: true
+  sidebar:
+    fields: {  }

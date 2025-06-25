@@ -2,12 +2,14 @@
 
 namespace Database\Factories;
 
+use App\Models\Author;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Country>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Note>
  */
-class CountryFactory extends Factory
+class AuthorFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +19,8 @@ class CountryFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => $this->faker->unique()->country(),
+            'id' => fake()->bothify('??????#############'),
+            'name' => fake()->name(),
         ];
     }
 }

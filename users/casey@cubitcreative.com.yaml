@@ -1,15 +1,3 @@
 super: true
-name: Casey
-id: 5234ab67-6465-447c-ad89-cda76bdae02b
-password_hash: $2y$10$qp1UGddMTOn5D808qxucNu4jjVbsdTPO7HFXVvrEZyLxqkobC4zQe
-preferences:
-  runway:
-    state:
-      columns:
-        - title
-        - country_id
-        - border_country_id
-    city:
-      columns:
-        - title
-        - state_id
+id: 96996721-1b61-4e6e-b2dc-3e831eaebd82
+password_hash: $2y$12$6jNwU1YnITs1m9GnhFBKOuVntLeOt/sWy1e3k0Y/5coqZe.7BkbEa

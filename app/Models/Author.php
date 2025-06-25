@@ -6,13 +6,17 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use StatamicRadPack\Runway\Traits\HasRunwayResource;
 
-class City extends Model
+class Author extends Model
 {
     use HasFactory,
         HasRunwayResource;
 
-    public function state()
+    protected $casts = [
+        'id' => 'string',
+    ];
+
+    public function notes()
     {
-        return $this->belongsTo( State::class );
+        return $this->hasMany(Note::class);
     }
 }

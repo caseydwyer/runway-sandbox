@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('countries', function (Blueprint $table) {
-            $table->id();
-            $table->string('title', 50)->index();
+        Schema::create('authors', function (Blueprint $table) {
+            $table->string('id', 25)->primary();
+            $table->string('name', 50)->index();
 
             $table->timestamps();
         });
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('countries');
+        Schema::dropIfExists('authors');
     }
 };

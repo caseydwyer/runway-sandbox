@@ -1,0 +1,35 @@
+title: Note
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: id
+            field:
+              type: text
+              display: 'ID'
+              validate: required
+              listable: true
+          -
+            handle: title
+            field:
+              type: text
+              width: 50
+              listable: true
+          -
+            handle: author_id
+            field:
+              type: belongs_to
+              resource: author
+              width: 50
+              listable: true
+          -
+            handle: notes
+            field:
+              type: bard
+  sidebar:
+    display: Sidebar
+    sections:
+      - {  }

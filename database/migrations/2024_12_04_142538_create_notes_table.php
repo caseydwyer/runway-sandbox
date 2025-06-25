@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('states', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('country_id')->index();
-            $table->string('title', 50)->index();
+        Schema::create('notes', function (Blueprint $table) {
+            $table->string('id', 25)->primary();
+            $table->string('author_id', 50)->index();
+            $table->string('title')->index();
+            $table->string('content', 1000)->nullable();
 
             $table->timestamps();
         });
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('states');
+        Schema::dropIfExists('notes');
     }
 };

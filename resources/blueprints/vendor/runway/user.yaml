@@ -1,0 +1,39 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              type: text
+              display: Name
+              validate: required
+          -
+            handle: email
+            field:
+              type: text
+              display: Email
+              validate: required
+          -
+            handle: email_verified_at
+            field:
+              type: date
+              display: 'Email Verified At'
+          -
+            handle: password
+            field:
+              type: text
+              display: Password
+              validate: required
+          -
+            handle: remember_token
+            field:
+              type: text
+              display: 'Remember Token'
+  sidebar:
+    display: Sidebar
+    sections:
+      - {  }
+title: User
