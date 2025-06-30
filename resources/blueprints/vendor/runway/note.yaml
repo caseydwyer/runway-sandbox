@@ -29,6 +29,10 @@ tabs:
             handle: notes
             field:
               type: bard
+          -
+            handle: meta_rating
+            field:
+              type: integer
   sidebar:
     display: Sidebar
     sections:
