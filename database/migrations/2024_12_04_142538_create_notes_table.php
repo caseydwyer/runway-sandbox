@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('author_id', 50)->index();
             $table->string('title')->index();
             $table->string('content', 1000)->nullable();
+            $table->json('meta')->nullable();
 
             $table->timestamps();
         });

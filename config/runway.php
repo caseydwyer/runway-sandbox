@@ -19,6 +19,9 @@ return [
         \App\Models\Note::class => [
             'name' => 'Notes',
             'title_field' => 'title',
+            'nested_field_prefixes' => [
+                'meta',
+            ],
         ],
     ],
 

@@ -13,6 +13,7 @@ class Note extends Model
 
     protected $casts = [
         'id' => 'string',
+        'meta' => 'object', // fails on `array` too
     ];
 
     public function author()

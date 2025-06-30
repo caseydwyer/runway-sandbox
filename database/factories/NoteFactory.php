@@ -23,6 +23,10 @@ class NoteFactory extends Factory
             'author_id' => Author::inRandomOrder()->first(),
             'title' => Str::title(fake()->words(3, true)),
             'content' => fake()->sentences(3, true),
+            'meta' => [
+                'rating' => fake()->randomElement([1,2,3,4,5]),
+                'dependent_person' => fake()->name,
+            ],
         ];
     }
 }
